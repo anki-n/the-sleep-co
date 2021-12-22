@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
-h1 {
-    color: red
+/* temporary styles for structural hmtl */
+* {
+    padding: 0.5rem;
+    border: 1px solid rgb(225,225,225);
+}
+
+body { border: none; }
+html { border: none; }
+
+/* Image Styles */
+.bg-image {
+    background-image: url('images/the-sleep-co-1.jpg');
+    background-size: cover;
+    min-height: 10rem;
 }
