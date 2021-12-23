@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
     <!-- This is our google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
 
     <!-- This is our fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,35 +28,36 @@
 <body>
 
     <!--------------------------- Header Banner ------------------------------------------->
-    <header class="padded grid">
+    <header class="padded grid text-center tall-100">
         <div class="col-12-middle">
-            <h3> sleep like a baby </h3>
-            <h1> the ultimate mattress solution </h1> 
+            <h3 class="font-weight-extra-bold"> <span class="featured-text"> sleep</span> like a baby </h3>
+            <h1 class="font-weight-light"> the ultimate mattress solution </h1> 
         </div>
     </header>
 
     <!-------------------------- Gallery / about Section --.------------------------------>
     <section class="grid">
-        <div class="padded col-6">
-            <h2> build to last a lifetime </h2>
+        <div class="padded col-6-middle">
+            <h2> built to last a <span class="featured-text">lifetime</span> </h2>
             <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae similique recusandae veniam porro ullam, distinctio enim quis ipsa totam optio repellat et asperiores consequuntur ut placeat suscipit minus eaque vel. </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At magnam atque doloribus vero, beatae asperiores itaque in repudiandae id dolorum provident hic dicta quas voluptatem sit laboriosam suscipit! Fuga, porro?</p> 
         </div>
-        <div class="bg-image col-6">
+        <div class="bg-image bg-bed col-6 tall-50">
             <!-- background image bed -->
         </div>
-        <div class="bg-image col-6">
+        <div class="bg-image bg-pug col-6 tall-50">
             <!-- background image pug sleeping -->
         </div>
-        <div class="padded col-6">
-            <h2> so soft you'll melt </h2>
+        <div class="padded col-6-middle">
+            <h2> so <span class="featured-text">soft</span> you'll melt </h2>
             <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae similique recusandae veniam porro ullam, distinctio enim quis ipsa totam optio repellat et asperiores consequuntur ut placeat suscipit minus eaque vel. </p>
         </div>
     </section>
 
     <!-------------------------- Feature icon grid -------------------------->
     <section class="padded grid bg-dark">
-        <div class="padded-sm col-12">
-            <h2> features you will love </h2>
+        <div class="padded-sm col-12 text-center">
+            <h2> <span class="featured-text">features</span> you will love </h2>
         </div>
         <div class="padded-sm col-3">
             <i class="fas fa-cloud"></i>
@@ -74,35 +78,40 @@
     </section>
 
     <!-------------------------- Image banner ----------------------------->
-    <section class="padded"> 
-        <h3> never underestimate the power of a good night sleep </h3>
+    <section class="padded text-center bg-pillow tall-70 grid bg-image"> 
+        <div class="col-12-middle">
+            <h3 class="big-text"> 
+                <span class="small-text font-weight-normal">never underestimate the power of</span> 
+                <br> a good night <span class="white-text">sleep</span> 
+            </h3>
+        </div>
     </section>
 
     <!-------------------------- Testimonial section ----------------------------->
-    <section class="padded grid"> 
-        <div class="col-1">
-            <span>"</span> 
+    <section class="padded-lg grid"> 
+        <div class="col-1 text-right">
+            <span class="quote-icon">“</span> 
         </div>
-        <div class="col-10">
-            <p> I've never experienced sleep like this. Omg I really love this mattress I want to buy one for every member of my family. </p>
-            <p> - A very happy customer </p> 
+        <div class="col-10 text-center">
+            <p class="medium-text font-weight-light"> I've never experienced sleep like this. Omg I really love this mattress I want to buy one for every member of my family. </p>
+            <p class="subtitle"> - A very happy customer </p> 
         </div>
         <div class="col-1">
-            <span>"</span>
+            <span class="quote-icon">"</span>
         </div>
     </section>
 
     <!------------------------- Footer -------------------------------------->
     <footer class="padded grid-spaceBetween bg-dark">
-        <div class="col-4">
-            <h2> Let's connect </h2>
+        <div class="col-4-bottom">
+            <h2> let's <br><span class="featured-text">connect</span> </h2>
             <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore facere velit, neque delectus nostrum saepe accusamus aliquid ullam! Molestiae officia corrupti quam possimus quos quibusdam voluptates porro nemo aliquam quidem? </p>
         </div>
-        <div class="col-6">
-            <p> Call: 04555 5555</p> 
-            <p> Email: hello@thesleep.co </p>
-            <p> Store: 55 Main St, Chicago </p>
-            <p> Instagram: @thesleepco </p>
+        <div class="col-5-bottom">
+            <p> <strong>Call:</strong> <a href="tel:#"> 04555 5555 </a></p> 
+            <p> <strong>Email:</strong> <a href="mailto:#"hello@thesleep.co>hello@thesleep.co</a></p>
+            <p> <strong>Store:</strong> 55 Main St, Chicago </p>
+            <p> <strong>Instagram:</strong> <a href="https://www.instagram.com/thesleepco">@thesleepco</a> </p> 
         </div>
     </footer>
 
