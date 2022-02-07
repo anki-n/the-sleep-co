@@ -99,15 +99,15 @@ a:hover {
 .text-center    { text-align: center;  }
 .text-right     { text-align: right;   }
 
-/* Header & Footer styles */
+/* Header, Banner & Footer styles */
 
-header {
+.banner {
     background-image: url('/images/the-sleep-co-1.jpg');
     background-size: cover;
     background-position: center;
 }
 
-header h3 {
+.banner h3 {
     font-size: 5.5rem;
     line-height: 1;
 }
