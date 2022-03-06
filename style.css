@@ -113,7 +113,6 @@
     background-image: url('images/the-sleep-co-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 10rem;
 }
 
 .landscape {  padding-bottom: 65%  ;}
@@ -310,6 +309,10 @@ textarea:focus {
 
 @media (max-width: 48em) {
 
+    html { font-size: 14px; }
+
+    p { font-size: 1.1rem;}
+
     body {
         border: 2px solid blue;
         padding: 0.5rem;
@@ -346,6 +349,10 @@ textarea:focus {
 
 @media (max-width: 36em) {
 
+    html { font-size: 12px; }
+    
+    p { font-size: 1.3rem;}
+
     body {
         border: 2px solid lightblue;
         padding: 0.5rem;
@@ -358,4 +365,17 @@ textarea:focus {
         font-size: 1.4rem;
         line-height: 1.1;
     }
+
+    h2 { font-size: 2rem; }
+}
+
+
+/* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+    [class*=grid] .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    } 
 }
