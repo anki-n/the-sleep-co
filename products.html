@@ -1,5 +1,15 @@
 --- 
 layout: default
+cards:
+ - heading: Small Heading
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos reiciendis dolorem praesentium eaque doloribus aliquid labore ad inventore molestiae, cum sit excepturi incidunt nostrum aperiam eligendi vel possimus id dicta.
+   featured_image: /images/the-sleep-co-1.jpg
+ - heading: Little Heading
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos reiciendis dolorem praesentium eaque doloribus aliquid labore ad inventore molestiae, cum sit excepturi incidunt nostrum aperiam eligendi vel possimus id dicta.
+   featured_image: /images/the-sleep-co-3.jpg
+ - heading: Small Heading
+   description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos reiciendis dolorem praesentium eaque doloribus aliquid labore ad inventore molestiae, cum sit excepturi incidunt nostrum aperiam eligendi vel possimus id dicta.
+   featured_image: /images/the-sleep-co-2.jpg
 --- 
 
     <!--------------------------- Header Banner ------------------------------------------->
@@ -54,35 +64,18 @@ layout: default
 
     <!-------------------------- Cards -------------------------->
     <section class="grid padded">
+        {% for item in page.cards %}
         <div class="col-4_sm-12 padded-sm">
             <div class="card">
-                <div class="bg-image portrait"> </div>
+                <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"> </div>
                 <div class="padded-1">
-                    <h3> little heading </h3> 
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi aspernatur officia laudantium molestiae accusamus, nam dolore minima soluta nisi quas reprehenderit ullam perspiciatis ipsum est excepturi itaque quis. Eum, labore.</p> 
+                    <h3> {{item.heading}} </h3> 
+                    <p> {{item.description}} </p> 
                 </div>
             </div>
         </div>
+        {% endfor %}
 
-        <div class="col-4_sm-12 padded-sm">
-            <div class="card">
-                <div class="bg-image portrait"> </div>
-                <div class="padded-1">
-                    <h3> little heading </h3> 
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi aspernatur officia laudantium molestiae accusamus, nam dolore minima soluta nisi quas reprehenderit ullam perspiciatis ipsum est excepturi itaque quis. Eum, labore.</p> 
-                </div>
-            </div>
-        </div>
-
-        <div class="col-4_sm-12 padded-sm">
-            <div class="card">
-                <div class="bg-image portrait"> </div>
-                <div class="padded-1">
-                    <h3> little heading </h3> 
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi aspernatur officia laudantium molestiae accusamus, nam dolore minima soluta nisi quas reprehenderit ullam perspiciatis ipsum est excepturi itaque quis. Eum, labore.</p> 
-                </div>
-            </div>
-        </div>
     </section>
 
 
