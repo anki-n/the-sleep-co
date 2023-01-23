@@ -25,6 +25,9 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- This is our custom CSS stylesheet, this always goes last -->
     <link rel="stylesheet" href="style.css">
 
@@ -42,7 +45,7 @@
         <div class="header-nav col-12-top grid">
     <div class="col-5_sm-11-middle sm-padded-b-0">
         <a href="/index.html" class="logo">
-            <h2> The fuck Co </h2>
+            <h2> The Sleep Co </h2>
         </a>
     </div>
     <nav class="col-7_sm-12-middle text-right sm-text-center hide-sm">
@@ -59,7 +62,7 @@
     </div>
 </div>
 
-<nav class="mobile-menu">
+<nav class="mobile-menu bg-featured padded">
     <a href="/index.html"> Home </a>
     <a href="/about.html"> About </a>
     <a href="/products.html"> Our Products </a>
@@ -67,10 +70,10 @@
 </nav>
 
         <div class="col-12 text-center">
-            <h3 class="font-weight-extra-bold editable">
+            <h3 class="font-weight-extra-bold editable" data-aos="fade-in" data-aos-duration="1000">
                 <span class="featured-text"> sleep</span> like a puppy
             </h3>
-            <h1 class="font-weight-light editable">
+            <h1 class="font-weight-light editable" data-aos="fade-up" data-aos-delay="500">
                 the ultimate mattress solution
             </h1> 
         </div>
@@ -79,7 +82,7 @@
     
     <!-------------------------- Gallery / about Section --.------------------------------>
     <section class="grid">
-        <div class="padded col-6_xs-12-middle">
+        <div class="padded col-6_xs-12-middle" data-aos="fade-right">
             <h2 class="editable">
                 built to last a <span class="featured-text">lifetime</span>
             </h2>
@@ -96,7 +99,7 @@
         <div class="bg-image bg-pug col-6_xs-12 tall-70">
             <!-- background image pug sleeping -->
         </div>
-        <div class="padded col-6_xs-12-middle editable">
+        <div class="padded col-6_xs-12-middle editable" data-aos="fade-left">
             <h2>so <span class="featured-text">soft</span> you'll melt</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae similique recusandae veniam porro ullam, distinctio enim quis ipsa totam optio repellat et asperiores <a target="_blank" rel="noopener" href="https://www.google.com">google</a> ut placeat suscipit minus eaque vel.</p>
         </div>
@@ -104,7 +107,7 @@
 
     <!-------------------------- Feature icon grid -------------------------->
     <section class="padded grid-center bg-dark">
-        <div class="padded-sm col-12 text-center">
+        <div class="padded-sm col-12 text-center" data-aos="fade-in">
             <h2 class="editable">
                 <span class="featured-text">features</span> you will love
             </h2>
@@ -191,6 +194,12 @@
 
 <!------------------------- Add jQuery ----------------------------->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!------------------------ Animate on Scroll -------------------------------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!------------------------- our custom Javascript file  ----------------------------->
+<script src="/scripts.js"></script>
 
 </body>
 
