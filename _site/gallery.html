@@ -28,6 +28,11 @@
     <!-- Animate on Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Lightgallery for pop-ups  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css"
+        integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- This is our custom CSS stylesheet, this always goes last -->
     <link rel="stylesheet" href="style.css">
 
@@ -86,6 +91,63 @@
 
 <section class="padded">
 
+    <h2> Popup Gallery </h2>
+    <div class="gallery grid" id="lightgallery">
+
+        
+
+        <a class="col-4_sm-12 gallery-item" href="/images/the-sleep-co-1.jpg">
+            <div class="bg-image square" style="background-image: url('/images/the-sleep-co-1.jpg');">
+            </div>
+        </a>
+
+        
+
+        <a class="col-4_sm-12 gallery-item" href="/images/the-sleep-co-2.jpg">
+            <div class="bg-image square" style="background-image: url('/images/the-sleep-co-2.jpg');">
+            </div>
+        </a>
+
+        
+
+        <a class="col-4_sm-12 gallery-item" href="/images/the-sleep-co-3.jpg">
+            <div class="bg-image square" style="background-image: url('/images/the-sleep-co-3.jpg');">
+            </div>
+        </a>
+
+        
+
+        <a class="col-6_sm-12 gallery-item" href="/images/the-sleep-co-2.jpg">
+            <div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-2.jpg');">
+            </div>
+        </a>
+
+        
+
+        <a class="col-6_sm-12 gallery-item" href="/images/the-sleep-co-1.jpg">
+            <div class="bg-image portrait" style="background-image: url('/images/the-sleep-co-1.jpg');">
+            </div>
+        </a>
+
+        
+
+        <a class="col-12 gallery-item" href="/images/the-sleep-co-4.jpg">
+            <div class="bg-image landscape" style="background-image: url('/images/the-sleep-co-4.jpg');">
+            </div>
+        </a>
+
+        
+
+    </div>
+
+</section>
+
+
+<!-- Standard Gallery -->
+
+<section class="padded">
+
+    <h2> Standard Gallery </h2>
     <div class="gallery grid">
 
         
@@ -193,6 +255,9 @@
 
 <!------------------------ Animate on Scroll -------------------------------->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Lightgallery for pop-ups  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
 
 <!------------------------- our custom Javascript file  ----------------------------->
 <script src="/scripts.js"></script>
