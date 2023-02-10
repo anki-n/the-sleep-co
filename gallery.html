@@ -1,31 +1,39 @@
 ---
 layout: default
 popup-gallery: true
+gallery-background: Dark Background
+gallery-background-option-2: bg-dark
 gallery:
    -
       column-size: col-4_sm-12
       aspect-ratio: square
       background-image: /images/the-sleep-co-1.jpg
+      type: dog
    -
       column-size: col-4_sm-12
       aspect-ratio: square
       background-image: /images/the-sleep-co-2.jpg
+      type: dog
    -
       column-size: col-4_sm-12
       aspect-ratio: square
       background-image: /images/the-sleep-co-3.jpg
+      type: dog
    -
       column-size: col-6_sm-12
       aspect-ratio: portrait
       background-image: /images/the-sleep-co-2.jpg
+      type: cat
    -
       column-size: col-6_sm-12
       aspect-ratio: portrait
       background-image: /images/the-sleep-co-1.jpg
+      type: rabbit
    -
       column-size: col-12
       aspect-ratio: landscape
       background-image: /images/the-sleep-co-4.jpg
+      type: rabbit
 ---
 
 
@@ -46,20 +54,23 @@ gallery:
 
 
 
-{% if page.popup-gallery == "true" %}
+{% if page.popup-gallery == true %}
 
 <!-- Popup Gallery -->
-<section class="padded">
+<section class="padded
+  {% if page.gallery-background == 'Dark Background' %} bg-dark {% endif %}">
 
     <h2> Popup Gallery </h2>
     <div class="gallery grid" id="lightgallery">
 
         {% for item in page.gallery %}
+        {% if item.type == 'dog' or item.type == 'cat' %}
 
         <a class="{{item.column-size}} gallery-item" href="{{item.background-image}}">
             <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background-image}}');">
             </div>
         </a>
+        {% endif %}
 
         {% endfor %}
 
@@ -71,7 +82,7 @@ gallery:
 
 
 <!-- Standard Gallery -->
-<section class="padded">
+<section class="padded {{page.gallery-background-option-2}}">
 
     <h2> Standard Gallery </h2>
     <div class="gallery grid">
