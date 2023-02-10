@@ -1,5 +1,6 @@
 ---
 layout: default
+popup-gallery: true
 gallery:
    -
       column-size: col-4_sm-12
@@ -27,6 +28,7 @@ gallery:
       background-image: /images/the-sleep-co-4.jpg
 ---
 
+
 <!--------------------------- Header Banner ------------------------------------------->
 <header class="banner grid tall-100 md-tall-80">
 
@@ -43,8 +45,10 @@ gallery:
 </header>
 
 
-<!-- Gallery -->
 
+{% if page.popup-gallery == "true" %}
+
+<!-- Popup Gallery -->
 <section class="padded">
 
     <h2> Popup Gallery </h2>
@@ -61,27 +65,12 @@ gallery:
 
     </div>
 
-
-    <div class="gallery grid" id="lightgallery-2">
-    
-    
-        <a class="button" href="/images/the-sleep-co-1.jpg" title="Funny Dog 1">
-            View Our Work
-        </a>
-        <a href="/images/the-sleep-co-2.jpg" title="Funny Dog 1"> </a>
-        <a href="/images/the-sleep-co-3.jpg" title="Funny Dog 2"> </a>
-        <a href="/images/the-sleep-co-4.jpg" title="Funny Dog 3"> </a>
-        <a href="/images/the-sleep-co-1.jpg" title="Funny Dog 4"> </a>
-        <a href="/images/the-sleep-co-2.jpg" title="Funny Dog 5"> </a>
-        <a href="/images/the-sleep-co-3.jpg" title="Funny Dog 6"> </a>
-    
-    </div>
-
 </section>
+
+{% else %}
 
 
 <!-- Standard Gallery -->
-
 <section class="padded">
 
     <h2> Standard Gallery </h2>
@@ -121,5 +110,27 @@ gallery:
         </div>
     </div>
     -->
+
+</section>
+
+{% endif %}
+
+<!-- Button Gallery -->
+<section class="padded">
+
+    <div class="gallery grid" id="lightgallery-2">
+
+
+        <a class="button" href="/images/the-sleep-co-1.jpg" title="Funny Dog 1">
+            View Our Work
+        </a>
+        <a href="/images/the-sleep-co-2.jpg" title="Funny Dog 1"> </a>
+        <a href="/images/the-sleep-co-3.jpg" title="Funny Dog 2"> </a>
+        <a href="/images/the-sleep-co-4.jpg" title="Funny Dog 3"> </a>
+        <a href="/images/the-sleep-co-1.jpg" title="Funny Dog 4"> </a>
+        <a href="/images/the-sleep-co-2.jpg" title="Funny Dog 5"> </a>
+        <a href="/images/the-sleep-co-3.jpg" title="Funny Dog 6"> </a>
+
+    </div>
 
 </section>
