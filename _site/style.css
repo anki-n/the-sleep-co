@@ -297,6 +297,10 @@ footer a {
     opacity: 0.95;
 }
 
+.lg-sub-html {
+    background-color: rgba(20, 20, 20, 0.95);
+}
+
 
 /* Buttons & Forms ---------------------------- */
 
