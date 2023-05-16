@@ -330,6 +330,9 @@ textarea:focus {
     color: inherit;
 }
 
+.button:hover {
+    background-color:#192B37;
+}
 
 
 /* Testimonial Block --------------- */
