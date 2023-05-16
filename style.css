@@ -334,6 +334,10 @@ textarea:focus {
     background-color: white;
 }
 
+.form .button:hover {
+    color: #FFBE00; 
+}
+
 
 /* Testimonial Block --------------- */
 /* This is the quote icon */
