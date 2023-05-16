@@ -334,7 +334,7 @@ textarea:focus {
     background-color: white;
 }
 
-.form .button:hover {
+.form.button:hover {
     color: #FFBE00; 
 }
 
